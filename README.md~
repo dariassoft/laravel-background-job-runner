@@ -5,7 +5,7 @@ This is a Laravel Sail implementation,
 
 
 ## Requirements
-You need to have docker, composer, and php installed, if you need you check how to:
+You need to have composer, and php installed, if you need you check how to:
 https://laravel.com/docs/11.x#installing-php
 
 ## Setup
@@ -14,10 +14,10 @@ https://laravel.com/docs/11.x#installing-php
   - cd laravel-background-job-runner 
   - npm install && npm run build
   - composer install
-  - cp .env.example .env
+  - php artisan sail:install
 
 Create an alias to ./vendor/bin/sail
-  - sail up -d
+  - sail up
   - sail artisan migrate
   - sail composer dump-autoload
 
